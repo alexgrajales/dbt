@@ -1,0 +1,1 @@
+select DISTINCT codigo_departamento, departamento from {{ref('covid_colombia')}}
