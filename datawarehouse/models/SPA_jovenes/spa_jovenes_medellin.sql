@@ -1,0 +1,1 @@
+select * from {{ var("schema") }}.data_covid
