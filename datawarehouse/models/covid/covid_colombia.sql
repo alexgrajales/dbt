@@ -79,7 +79,7 @@ select
        "Tipo de recuperación" as tipo_recuperacion,
        "Estado" as estado_gravedad,
        "Ubicación del caso" as ubicacion,
-       case when "Recuperado" = "fallecido" then 'fallecido no covid' else "Recuperado" end as estado_actual,
+       case when "Recuperado" = 'fallecido' then 'fallecido no covid' else "Recuperado" end as estado_actual,
        case
            WHEN "Recuperado" = 'Recuperado' then 'si'
            ELSE 'no'
